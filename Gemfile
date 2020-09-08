@@ -38,6 +38,23 @@ gem 'concurrent-ruby', '1.1.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+gem 'unicorn'
+gem 'bootstrap-sass', '3.4.1'
+gem 'bcrypt',         '3.1.12'
+gem 'jquery-rails'
+gem 'faker',          '1.7.3'
+gem 'will_paginate',           '3.1.7'
+gem 'bootstrap-will_paginate', '1.0.0'
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.9.4'
+gem 'ransack'
+gem 'pry-rails'
+gem 'pry-byebug'
+gem 'counter_culture', '~> 1.8'
+gem 'friendly_id'
+gem 'font-awesome-sass', '~> 5.4.1'
+gem 'i18n'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
