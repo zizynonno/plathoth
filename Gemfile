@@ -33,6 +33,28 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'unicorn'
+gem 'bootstrap-sass', '3.4.1'
+gem 'bcrypt',         '3.1.12'
+gem 'jquery-rails'
+gem 'faker',          '1.7.3'
+gem 'will_paginate',           '3.1.7'
+gem 'bootstrap-will_paginate', '1.0.0'
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.9.4'
+gem 'ransack'
+gem 'pry-rails'
+gem 'pry-byebug'
+gem 'counter_culture', '~> 1.8'
+gem 'friendly_id'
+gem 'font-awesome-sass', '~> 5.4.1'
+gem 'i18n' ,'~> 0.5'
+gem 'devise'
+gem 'devise-i18n'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'dotenv-rails'
+
 gem 'concurrent-ruby', '1.1.7'
 
 # Reduces boot times through caching; required in config/boot.rb
