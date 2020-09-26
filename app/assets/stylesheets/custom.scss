@@ -39,3 +39,21 @@ textarea {
   color: #fff;
   text-decoration: none;
 }
+
+/* form */
+
+.container-login {
+  @extend .container-fluid;
+  max-width: 576px;
+  padding: 2rem;
+}
+
+/* flash */
+
+.alert-notice {
+  @extend .alert-info;
+}
+
+.alert-alert {
+  @extend .alert-danger;
+}
