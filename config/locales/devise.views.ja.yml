@@ -27,7 +27,18 @@ ja:
         unlock_token: ロック解除用トークン
         updated_at: 更新日
     models:
-      user: ユーザ
+      user: ユーザー
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              taken: は既に登録済みです。
+            password:
+              blank: が空です。
+              too_short: が短すぎます。
+            password_confirmation:
+              confirmation: が空欄です。
   users:
     confirmations:
       confirmed: メールアドレスが確認できました。
