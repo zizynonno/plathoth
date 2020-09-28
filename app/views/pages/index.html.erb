@@ -1,23 +1,10 @@
-<div class="home">
-  <% if user_signed_in? %>
-    <div class="outline">
-      <p>
-        IT技術の動画・画像・スライド。あらゆるイメージをPlathothで一元化！<br >
-      </p>
-    </div>
-  <% else %>
-    <h1 class="app-title">The-View</h1>
-
-  <div class="outline">
-    <p>
-      IT技術の動画・画像・スライド。あらゆるイメージをPlathothで一元化！<br >
-    </p>
+<div class="container">
+  <div class="row">
+    <div class="aaaa"><%= render @contents %></div>
   </div>
-
-    <div class="topbtn-block">
-      <%= link_to 'サインアップ', new_user_registration_path %>
-      <%= link_to 'ログイン', new_user_session_path %>
-      <%# <%= link_to 'ゲストログイン', users_guest_sign_in_path, method: :post, class: "topbtn" %> %>
-    </div>
-  <% end %>
 </div>
+
+
+  <ol class="contents col-3">
+    <%= render @contents %>
+  </ol>
