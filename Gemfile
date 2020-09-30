@@ -55,6 +55,7 @@ gem 'devise-bootstrap-views', '~> 1.0'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'dotenv-rails'
+gem 'rails-i18n', '~> 5.1'
 
 gem 'concurrent-ruby', '1.1.7'
 

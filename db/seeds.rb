@@ -25,9 +25,10 @@ users = User.order(:created_at).take(6)
   title = "phathothのイメージ#{n+1}"
   summary = Faker::Lorem.sentence(5)
   view = rand(10000)
-  media = open("#{Rails.root}/db/fixtures/00.jpg")
+  media = File.join(Rails.root, "db/fixtures/00.jpg")
   users.each { |user| user.contents.create!(title: title,
                                             summary: summary,
                                             view: view,
-                                            media: media) }
+                                            media: File.new(media))
+              }
 end
