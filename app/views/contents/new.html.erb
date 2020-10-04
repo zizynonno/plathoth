@@ -1,0 +1,16 @@
+<%= form_for(@content) do |f| %>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title, placeholder: "タイトルを入力" %>
+  </div>
+  <div class="field">
+    <%= f.label :summary %>
+    <%= f.text_area :summary, placeholder: "概要欄を入力" %>
+  </div>
+  <span class="media">
+    <%= f.file_field :media %>
+
+    <%= f.submit "Post", class: "btn btn-primary" %>
+  </span>
+<% end %>
