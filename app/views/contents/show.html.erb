@@ -1,0 +1,6 @@
+<% if @extension_type.include?("jpg") || @extension_type.include?("jpeg") || @extension_type.include?("png") %>
+  <img class="test" src="<%= @content.media.url %>" alt="Card image cap">
+<% elsif @extension_type.include?("mov") || @extension_type.include?("mp4") %>
+  <% video_tag(@content.media.url, controls: true, preload: 'none') %>
+<% end %>
+<p><%= @content.title %></p><p><%= @content.view %>view</p>
