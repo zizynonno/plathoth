@@ -1,6 +1,6 @@
 <div class="card my-3" >
   <div class="card-img-top bd-placeholder-img" >
-    <%= image_tag(content.media.url) %>
+    <%= image_tag content.media.url,:size => "260x180" %>
   </div>
   <div class="card-body">
     <h3 class="card-title"><%= link_to content.title, content %></h3>

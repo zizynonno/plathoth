@@ -1,6 +1,15 @@
-<% if @extension_type.include?("jpg") || @extension_type.include?("jpeg") || @extension_type.include?("png") %>
-  <img class="test" src="<%= @content.media.url %>" alt="Card image cap">
-<% elsif @extension_type.include?("mov") || @extension_type.include?("mp4") %>
-  <% video_tag(@content.media.url, controls: true, preload: 'none') %>
-<% end %>
-<p><%= @content.title %></p><p><%= @content.view %>view</p>
+<div class="container">
+  <div class="col-xs-8">
+    <% if @extension_type.include?("jpg") || @extension_type.include?("jpeg") || @extension_type.include?("png") %>
+      <div class="img-responsive">
+        <%= image_tag @content.media.url,:size => "520x360" %>
+      </div>
+    <% elsif @extension_type.include?("mov") || @extension_type.include?("mp4") %>
+      <% video_tag(@content.media.url, controls: true, preload: 'none') %>
+    <% end %>
+    <h3><%= @content.title %></h3>
+    <p class="content_info"><%= l @content.created_at, format: :short %>・<%= @content.view %>view</p>
+  </div>
+</div>
+
+
