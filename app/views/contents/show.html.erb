@@ -2,7 +2,7 @@
   <div class="col-xs-8">
     <% if @extension_type.include?("jpg") || @extension_type.include?("jpeg") || @extension_type.include?("png") %>
       <div class="img-responsive">
-        <%= image_tag @content.media.url,:size => "520x360" %>
+        <%= image_tag @content.media.url %>
       </div>
     <% elsif @extension_type.include?("mov") || @extension_type.include?("mp4") %>
       <% video_tag(@content.media.url, controls: true, preload: 'none') %>

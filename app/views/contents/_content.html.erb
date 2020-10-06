@@ -1,10 +1,10 @@
-<div class="card my-3" >
+<div class="card my-3 col-xs-3" >
   <div class="card-img-top bd-placeholder-img" >
     <%= image_tag content.media.url,:size => "260x180" %>
-  </div>
-  <div class="card-body">
-    <h3 class="card-title"><%= link_to content.title, content %></h3>
-    <p class="card-text">概要だよ！恐らく一覧には必要ないけどとりあえず入れてる</p>
-    <a href="#" class="btn btn-primary">詳細を見る</a>
+    <div class="card-body">
+      <h3 class="card-title"><%= link_to content.title, content %></h3>
+      <p class="content_info"><%= l content.created_at, format: :short %>・<%= content.view %>view</p>
+      <p class="card-text"><%= content.summary %></p>
+    </div>
   </div>
 </div>
